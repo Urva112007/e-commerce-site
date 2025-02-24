@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    margin top: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right label, .right input, .right p, .right button {
+    margin: 5px 0;
+    font-size: larger;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+.group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://images.vegnonveg.com/resized/700X573/11422/air-jordan-4-retro-se-smoke-greyiron-grey-cement-grey-grey-66b48d859813d.jpg" alt="Image">
+        </div>
+        <div class="right">
+            <div class="group">
+                <label>Select Size:</label>
+                <label><input type="radio" id="size1" name="size" value="1" onchange="updateTotal('size1')">size 1: 500</label>
+                <br>
+                <label><input type="radio" id="size2" name="size" value="2" onchange="updateTotal('size2')">Size 2: 1000</label>
+                <br>
+                <label><input type="radio" id="size3" name="size" value="3" onchange="updateTotal('size3')">Size 3: 1500</label>
+                <br>
+                <label><input type="radio" id="size4" name="size" value="4" onchange="updateTotal('size4')">Size 4: 2000</label>
+                <br>
+                <label><input type="radio" id="size5" name="size" value="5" onchange="updateTotal('size5')">Size 5: 2500</label>
+                <p>Price: ₹<span id="price">0</span></p>
+                <p>Total: ₹<span id="total">0</span></p>
+                <button type="submit">Proceed</button>
+        </div>
+    </div>
+    <script>
+        function updateTotal(size) {
+    let prices = {
+        'size1': 500,
+        'size2': 1000,
+        'size3': 1500,
+        'size4': 2000,
+        'size5': 2500
+    };
+    
+    const price = prices[size];
+    const total = price;
+    
+    document.getElementById('price').innerText = price;
+    document.getElementById('total').innerText = total;
+}
+
+        </script>
+</body>
+</html>
