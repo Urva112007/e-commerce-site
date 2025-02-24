@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          href="style.css">
+    <title>About</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+
+/* About Section */
+
+.about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+.learn{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1f9405;
+}
+
+/* Team Section */
+
+.team {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 18rem;
+    height: 25rem;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 18rem;
+    height: 12rem;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card-info button {
+    margin: 2rem 1rem;
+}
+
+.card-name {
+    font-size: xx-large;
+    margin: 10px 0;
+}
+
+.card-role {
+    font-size: 1rem;
+    color: #888;
+    margin: 5px 0;
+}
+
+.card-para {
+    font-size: small;
+    color: #555;
+    padding: 10px;
+}
+h3 {
+    left: auto;
+    font-size: larger;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+.buy{
+    color: white;
+    background-color: black;
+}
+.para{
+    color: white;
+    background-color: black; 
+}
+.arrow{
+    color: white;
+    background-color: black;  
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+
+    .team {
+        margin: 0 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                SoleXchange
+              </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">
+                 Home</a>
+                  </li>
+                <li><a href="About.html">
+                  About</a>
+                  </li>
+                <li><a href="Brand.html">
+                  Brand</a>
+                  </li>
+                <li><a href="categories2.html">
+                  Categories</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Us</h1>
+        <p style="font-weight: bold">
+          SoleXchange is a shoereselling website.....
+          </p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="https://png.pngtree.com/back_origin_pic/04/63/68/bd6de885b7268afbe7d1018ebb3c46ff.jpg" alt="SoleXchange">
+            </div>
+            <div>
+            <p> SoleXchange is a leading platform
+                that provides shoes which the customer 
+                can sell their shoes and another customer 
+                can buy from that customer in lowest price.
+                It is also provided on world wide
+                and it has many popular brands of shoes like
+                Nike,adidas,campus etc.
+                It is also affordable to everyone
+                So that any can buy the branded shoes for ourself.
+            </p>
+                <button>Read More...</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h1>Informations</h1>
+        <div class="team-cards">
+          
+            <!-- Cards here -->
+            <!-- Card 1 -->
+          
+            <div class="card">
+                <div class="card-img">
+                    <img src=
+"https://images-wp.stockx.com/about/uploads/2022/08/sneaker.svg" alt="Verification">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">SoleXchange Verification</h2>
+                    <p class="card-para">Every item sold goes through our proprietary multi-step verification process with our team of verification experts.</p>
+                    <p><a href="learn1.html" class="learn">Learn More++</a></p>                
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+          
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images-wp.stockx.com/about/uploads/2022/08/lock.svg" alt="Secure">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Secure</h2>
+                    <p class="card-role"></p>
+                    <p class="card-para">Preserving the integrity of our marketplace means staying a step ahead. Our security and fraud systems, powered by our world class partners, have your personal information covered </p>
+                    <p><a href="learn2.html" class="learn">Learn More++</a></p>
+                </div>
+            </div>
+          
+            <!-- Card 3 -->
+          
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images-wp.stockx.com/about/uploads/2022/08/graph-down.svg" alt="Transparent Pricing">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Transparent Pricing</h2>
+                    <p class="card-role"></p>
+                    <p class="card-email">Our real-time marketplace works just like the stock market –  allowing you to buy and sell the most coveted items at their true market price.</p>
+                    <p><a href="learn3.html" class="learn">Learn More++</a></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>How it works</h1>
+        </div>
+        <div class="buy">
+            <h2>BUY</h2>
+        </div> 
+        <div class="para"> 
+            <p><h3>Step-1:</h3></p>
+               <p> Place A Bid Or Buy Now</p>
+        </div>       
+        <div class="arrow">↓</div>
+        <div class="para">
+            <p><h3>Step-2:</h3></p>
+            <p>StockX Verification</p>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="para">
+            <p><h3>Step-3:</h3></p>
+            <p>We Ship To You</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GeeksforGeeks. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

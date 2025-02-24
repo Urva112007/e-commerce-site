@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .payment-form {
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+   
+    <h2>Select Payment Method</h2>
+    <form id="payment-form" class="payment-form">
+        <div class="form-field">
+            <label for="card-element">Credit or debit card</label>
+            <div id="card-element">
+                <!-- Stripe.js will create the card element here -->
+            </div>
+        </div>
+        <button type="submit">Submit Payment</button>
+    </form>
+
+    <script>
+        // Stripe public key
+        const stripe = Stripe('YOUR_PUBLIC_KEY');
+        const elements = stripe.elements();
+        const card = elements.create('card');
+        card.mount('#card-element');
+
+        // Handle form submission
+        const form = document.getElementById('payment-form');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const { token, error } = await stripe.createToken(card);
+            if (error) {
+                console.error(error);
+            } else {
+                console.log('Token generated:', token);
+                // Send the token to your server for processing
+            }
+        });
+    </script>
+    <script>
+        // Handle form submission
+        const form = document.getElementById('payment-form');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+    
+            const { token, error } = await stripe.createToken(card);
+            if (error) {
+                console.error(error);
+            } else {
+                console.log('Token generated:', token);
+    
+                // Send the token to your server for processing
+                const response = await fetch('/charge', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token: token, amount: 100 }), // Adjust the amount as needed
+                });
+    
+                const result = await response.json();
+                if (result.success) {
+                    alert('Payment successful!');
+                } else {
+                    alert('Payment failed: ' + result.error);
+                }
+            }
+        });
+    </script>
+     
+</body>
+</html>

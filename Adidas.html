@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header {
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #121111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0ff213;
+}    
+.Adidas-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.nike-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.Adidas-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Adidas-content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.Adidas-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.shoebox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.item-image img {
+    width: 100%;
+    height: auto;
+}
+.item-name {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+.item-price {
+    color: #555;
+    margin-bottom: 10px;
+}
+.buy-now-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buy-now-button button:hover {
+    background-color: #45a049;
+}
+h2{
+    font-size: larger;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SoleExchange</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Brand.html">Brand</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Adidas-section">
+        <h1>Adidas</h1>
+        <div class="Adidas-content">
+            <p>Adidas is a German athletic apparel and footwear corporation. It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.</p>
+        </div>
+    </section>
+
+    <h2>Adidas</h2>
+    <div class="shoebox">
+        <div class="collection-item">
+            <div class="item-image"><img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3dc11e9ba4844a77aec3d8c1760c2cdc_9366/Harden_Volume_7_003_Shoes_Green_IF1138_01_standard.jpg"></div>
+            <div class="item-name">Harden Volume 7</div>
+            <div class="item-price">8,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ad65bcef6dfb4473be2ec1c1d44ec1a3_9366/Treziod_PT_Shoes_Grey_IE4237_01_standard.jpg"></div>
+            <div class="item-name">Treziod PT</div>
+            <div class="item-price">9,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/70e289b6b7ea41a5bc1823112c2d9d12_9366/ACE_CRUX_M_White_JJ5058_01_00_standard.jpg" alt="Item 3"></div>
+            <div class="item-name">ACE CRUX M</div>
+            <div class="item-price">5,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/78116f37f4db45c48f30c3052be86e9d_9366/Dingyun_Zhang_Samba_Black_IE3176_01_standard.jpg" alt="Item 3"></div>
+            <div class="item-name">Dingyun Zhang Samba</div>
+            <div class="item-price">20,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/de0cfda537384437887c36c38e78375c_9366/Y-3_Nizza_High_White_IG4088_01_standard.jpg" alt="Item 3"></div>
+            <div class="item-name">Y-3 Nizza High </div>
+            <div class="item-price">29,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+</div>
+</body>
+</html>
+            
+

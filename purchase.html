@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar Styles */
+header {
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #100e0e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #05c816;
+}
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .details {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .size-option {
+            margin-top: 10px;
+        }
+        .size-option label {
+            font-size: larger;
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
+            font-size: x-large;
+        }
+        .total-amount {
+            text-align: center;
+            margin-top: 20px;
+            font-size: larger;
+            font-size: x-large;
+        }
+        .proceed-button {
+            align-content: center;
+            margin-top: 20px;
+            height: 40px;
+            width: 200px;
+            font-size: large;
+            padding: 10px 20px;
+        }
+        .proceed-button-container {
+            display: flex;
+            justify-content: center; /* Center the button horizontally */
+            margin-top: 20px;
+        }
+        h2{
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SoleExchange</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Brand.html">Brand</a></li>
+                <li><a href="categories2.html">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="image">
+            <img src="https://images.vegnonveg.com/resized/700X573/11422/air-jordan-4-retro-se-smoke-greyiron-grey-cement-grey-grey-66b48d859813d.jpg" alt="Shoe Image">
+        </div>
+        <div class="details">
+            <h2>Select Size</h2>
+            <div class="size-option">
+                <label><input type="radio" name="size" value="100" onclick="updateTotal()"> Size 6 - ₹100</label>
+                <label><input type="radio" name="size" value="110" onclick="updateTotal()"> Size 7 - ₹110</label>
+                <label><input type="radio" name="size" value="120" onclick="updateTotal()"> Size 8 - ₹120</label>
+                <label><input type="radio" name="size" value="130" onclick="updateTotal()"> Size 9 - ₹130</label>
+                <label><input type="radio" name="size" value="140" onclick="updateTotal()"> Size 10 - ₹140</label>
+            </div>
+            <div class="total-amount" id="totalAmount">Total Amount:  ₹0</div>
+            <div class="proceed-button-container"></div>
+            <button class="proceed-button" onclick="proceedToPayment()">Proceed</button>
+        </div>
+    </div>
+
+    <script>
+        function updateTotal() {
+            const sizes = document.getElementsByName('size');
+            let total = 0;
+            for (const size of sizes) {
+                if (size.checked) {
+                    total = size.value;
+                    break;
+                }
+            }
+            document.getElementById('totalAmount').innerText = Total Amount;
+        }
+
+        function proceedToPayment() {
+            window.location.href = "payment.html";
+        }
+    </script>
+    
+</body>
+</html>

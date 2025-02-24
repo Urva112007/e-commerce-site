@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header {
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #121111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0ff213;
+}    
+.Puma-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.nike-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.Puma-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Puma-content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.Puma-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.shoebox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.item-image img {
+    width: 100%;
+    height: auto;
+}
+.item-name {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+.item-price {
+    color: #555;
+    margin-bottom: 10px;
+}
+.buy-now-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buy-now-button button:hover {
+    background-color: #45a049;
+}
+h2{
+    font-size: larger;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SoleExchange</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Brand.html">Brand</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Puma-section">
+        <h1>Puma</h1>
+        <div class="Puma-content">
+            <p>Puma is a German multinational corporation which designs and manufactures athletic and casual footwear, apparel, and accessories.</p>
+        </div>
+    </section>
+
+    <h2>Puma</h2>
+    <div class="shoebox">
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/305882/03/sv01/fnd/IND/fmt/png/BMW-Motorsport-Drift-Cat-5-Ultra-Unisex-Shoes"></div>
+            <div class="item-name">BMW Motorsport Drift Cat 5</div>
+            <div class="item-price">5,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/308359/01/sv01/fnd/IND/fmt/png/BMW-M-Motorsport-Drift-Cat-Decima-2.0-Unisex-Sneakers"></div>
+            <div class="item-name">BMW M Motorsport Drift Cat Decima</div>
+            <div class="item-price">9,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/305921/01/sv01/fnd/IND/fmt/png/Scuderia-Ferrari-Drift-Cat-5-Ultra-Unisex-Shoes" alt="Item 3"></div>
+            <div class="item-name">Scuderia Ferrari Drift Cat 5 </div>
+            <div class="item-price">5,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/401117/01/sv01/fnd/IND/fmt/png/Court-Classic-Res-Men's-Sneakers" alt="Item 3"></div>
+            <div class="item-name">Court Classic Res</div>
+            <div class="item-price">6,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396463/18/sv01/fnd/IND/fmt/png/Palermo-Unisex-Sneakers" alt="Item 3"></div>
+            <div class="item-name">Palermo </div>
+            <div class="item-price">7,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+</div>
+</body>
+</html>
+            
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header {
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #121111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0ff213;
+}    
+.nike-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.nike-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+nike-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.nike-content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.nike-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.shoebox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.item-image img {
+    width: 100%;
+    height: auto;
+}
+.item-name {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+.item-price {
+    color: #555;
+    margin-bottom: 10px;
+}
+.buy-now-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buy-now-button button:hover {
+    background-color: #45a049;
+}
+h2{
+    font-size: larger;
+    padding: 10px;
+}
+    </style>
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SoleExchange</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Brand.html">Brand</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="nike-section">
+        <h1>Nike</h1>
+        <div class="nike-content">
+            <p>Nike, Inc. is a global leader in the design, manufacturing, and marketing of sports footwear, apparel, equipment, and accessories. Founded in 1964, Nike has become an iconic brand known for its innovation, quality, and performance.</p>
+        </div>
+    </section>
+
+    <h2>Nike</h2>
+    <div class="shoebox">
+        <div class="collection-item">
+            <div class="item-image"><img src="https://images.vegnonveg.com/resized/700X573/11422/air-jordan-4-retro-se-smoke-greyiron-grey-cement-grey-grey-66b48d859813d.jpg" alt="Item 1"></div>
+            <div class="item-name">jordan 4</div>
+            <div class="item-price">20,000rs</div>
+            <div class="buy-now-button"><button onclick="window.location.href='Npurchse1.html'">Buy Now</button></div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTAhlnJH0sVJwGpA-UmVQEDhek4_dd_2De1iTKYw4MHFt36nhflmkbA62P2gG4qbbQqxmbKcrepU8A9S4jGLI7J7hrdafPXekNeySEkBMb_93CzRi3BRYYM&usqp=CAE" alt="Item 2"></div>
+            <div class="item-name">court vision low</div>
+            <div class="item-price">6,000rs</div>
+            <div class="buy-now-button"><button onlink="window.location.href='.html'">Buy Now</button></div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ9T50zjEeghL0287wlatDPh-myLxPe84oW0qk_-hQRpyb5Sjs_PhEfplNa6Ur6IsXZ0iXLNFDQIBG6fOgDDDK3YRDfwXNjewXnb7bn5OmwIGFmZckCNzBkAM0&usqp=CAE" alt="Item 3"></div>
+            <div class="item-name">Blazer Phantom Low </div>
+            <div class="item-price">10,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/35e9bc2c-ddfe-4bbb-9940-cb448f7a12f3/NIKE+PEGASUS+PREMIUM.png" alt="Item 3"></div>
+            <div class="item-name">Nike Pegasus Premium</div>
+            <div class="item-price">19,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+        <div class="collection-item">
+            <div class="item-image"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/dc41388b-95c7-473c-8602-e03f79ba68fb/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Item 3"></div>
+            <div class="item-name">Air Jordan 1 Cranes</div>
+            <div class="item-price">15,000rs</div>
+            <div class="buy-now-button"><button>Buy Now</button></div>
+            <div class="wishlist-icon">🤍</div>
+        </div>
+</body>
+</html>

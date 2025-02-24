@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories with Shoe Brands</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.category {
+    position: relative;
+    cursor: pointer;
+}
+
+.category-heading {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 24px;
+    padding: 25px;
+    color: white;
+    background-color: black;
+}
+
+.brands {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+.category:hover .brands {
+    display: block;
+}
+
+.brands p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            SoleXchange
+          </div>
+        <ul class="nav-links">
+            <li><a href="Home.html">
+             Home</a>
+              </li>
+            <li><a href="About.html">
+              About</a>
+              </li>
+            <li><a href="Brand.html">
+              Brand</a>
+              </li>
+            <li><a href="#">
+              Categories</a>
+              </li>
+        </ul>
+    </nav>
+
+    <h2 class="category-heading">Categories</h2>
+    <div class="categories">
+        <div class="category">
+            <h2>Men</h2>
+            <div class="brands">
+                <p><a href="Adidas.html">Adidas</a></p>
+                <p><a href="Nike.html">Nike</a></p>
+                <p><a href="Asics1.html">Asics</a></p>
+                <p><a href="converse.html">Converse</a></p>
+                <p><a href="Puma.html">Puma</a></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Women</h2>
+            <div class="brands">
+                <p><a href="Adidas.html">Adidas</a></p>
+                <p><a href="Nike.html">Nike</a></p>
+                <p><a href="Asics1.html">Asics</a></p>
+                <p><a href="converse.html">Converse</a></p>
+                <p><a href="Puma.html">Puma</a></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Children</h2>
+            <div class="brands">
+                <p><a href="Adidas.html">Adidas</a></p>
+                <p><a href="Nike.html">Nike</a></p>
+                <p><a href="Asics1.html">Asics</a></p>
+                <p><a href="converse.html">Converse</a></p>
+                <p><a href="Puma.html">Puma</a></p>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
